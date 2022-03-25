@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Registration Form</title>
+    <style>
+        .container {
+            background-color: rgba(0, 0, 0, 0.3);
+            border-bottom-left-radius: 50% 40%;
+            border-bottom-right-radius: 50% 40%;
+        }
+    </style>
+</head>
+<body bgcolor="#AFEEEE">
+    <div class="container" align="center">
+        <h2>Resigtration Form</h2>
+    </div>
+    <p style="font-family:arial;color:grey" align="center">Please Fill The Below Given Details</p>
+    <form action="C:\softura\training\Regsuccess.html" />
+    <label>First Name:</label>
+    <input type="text" name="fname" required /><br />
+    <br />
+    <label>Last Name:</label>
+    <input type="text" name="lname" required /><br />
+    <br />
+    <table>
+        <tr>
+            <td rowspan="2">
+                <label>Gender:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label><br />
+            </td>
+            <td>
+                <input type="radio" name="gen" value="Male" required><label>Male</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" name="gen" value="Female" required><label>Female</label>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <div class="form-group">
+        <label>DOB:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+        <input type="date" class="form-control" id="dob" name="dob" required />
+    </div>
+    <br />
+    <label>Phone Number:</label>
+    <input type="number" name="num" required /><br />
+    <br />
+    <label>Address:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+    <input type="text" name="addr" required />
+    <br />
+    <br />
+    <label>Pin Code:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+    <input type="number" name="num" required />
+    <br />
+    <table>
+        <tr>
+            <td rowspan="5">
+                <label>Qualification:&nbsp</label>
+            </td>
+            <td>
+                <input type="checkbox" name="qual" value="BE" /><label>BE</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="qual" value="BTECH" /><label>BTECH</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="qual" value="BSc" /><label>BSc</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="qual" value="BCA" /><label>BCA</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="qual" value="NA" /><label>NA</label>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <label>Email Address:</label>
+    <input type="text" name="email" required /><br />
+    <table>
+        <tr>
+            <td rowspan="4">
+                <label>Specialization:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label><br />
+            </td>
+            <td>
+                <input type="radio" name="stream" value="Computer Science"><label>Computer Science</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" name="stream" value="Information Technology"><label>Information Technology</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" name="stream" value="Computer Architecture"><label>Computer Architecture</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" name="stream" value="Electrical And Electronics"><label>Electrical And Electronics</label>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <label>College Name:</label>
+    <input type="text" name="cname" />
+    <br />
+    <br />
+    <input type="submit" value="Register">
+
+</body>
+</html>

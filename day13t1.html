@@ -1,0 +1,70 @@
+﻿﻿
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="utf-8" />
+    <title>Login Form</title>
+    <style type="text/css">
+        body {
+            background-image: url('tesla1.jpg');
+            background-size: cover;
+        }
+
+        h1 {
+            color: #F08080;
+            font-family: Jokerman;
+        }
+
+        label {
+            color: #E9967A;
+            align-content: center;
+        }
+
+        div {
+            background-color: lavender;
+            width: 350px;
+            height: 200px;
+            margin: 7em auto;
+            align-items: center;
+        }
+    </style>
+    <script type="text/javascript">
+        var attempt = 3;
+        function vaLogin() {
+            var un = document.getElementById("uname").value;
+            var pd = document.getElementById("pword").value;
+            if (un == "Ronaldo" && pd == "cr12") {
+                alert("Login Successful");
+                window.location = "day12t2.cs";
+                return true;
+            }
+            else {
+                attempt--;
+                alert("Username and Password mismatch " + attempt + " Login Attempts Available");
+
+                if (attempt == 0) {
+                    alert("You are Blocked");
+                }
+            }
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <div>
+            <h1>LOGIN</h1>
+            <form id="frm1" method="post" name="myForm" action="JS.html">
+                <label><b>Username:</b></label>
+                <input type="text" name="uname" id="uname" /><br />
+                <label><b>Password:</b></label>
+                <input type="password" name="pword" id="pword" />
+                <br />
+                <input type="submit" value="Login" onclick="vaLogin()" />
+            </form>
+        </div>
+    </center>
+</body>
+</html>
