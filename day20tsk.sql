@@ -105,7 +105,7 @@ select * from VW_new
 
 -------------------14-------------------------
 
-SELECT count(*) 
+SELECT count(*) No_Of_Table
 FROM [HumanResources].[Department],[HumanResources].[Employee],[HumanResources].[EmployeeDepartmentHistory],
 [HumanResources].[EmployeePayHistory],[HumanResources].[Shift]
 
