@@ -76,7 +76,7 @@ namespace Data
         public void ReadData()
         {
             SqlConnection con = new SqlConnection("data source = DESKTOP-RRCVLCD; database = Trial; user ID = sa; password = P@ssw0rd ");
-            SqlCommand cmd = new SqlCommand("select id, fname, lname, gender, email, phone from dbo.testC#", con);
+            SqlCommand cmd = new SqlCommand("select id, fname, lname, gender, email, phone from dbo.TaskC#", con);
             con.Open();
             cmd.ExecuteNonQuery();
 
