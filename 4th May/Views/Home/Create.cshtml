@@ -1,0 +1,47 @@
+﻿@model AdoMVC.Models.Customer;
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Create";
+}
+@using (var form = Html.BeginForm("Insert", "Home", FormMethod.Post))
+{
+    @Html.ValidationSummary()
+    <table>
+        <tr>
+            <th>New Customer</th>
+        </tr>
+        <tr>
+            <td>CustomerName:</td>
+            <td>@Html.TextBoxFor(m => m.CustomerName)</td>
+        </tr>
+        <tr>
+            <td>EmailID:</td>
+            <td>@Html.TextBoxFor(m => m.EmailID)</td>
+        </tr>
+        <tr>
+            <td>MobileNo:</td>
+            <td>@Html.TextBoxFor(m => m.MobileNo)</td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Register" /></td>
+        </tr>
+    </table>
+    @*<div>
+            @Html.LabelFor(m => m.CustomerName)
+            @Html.TextBoxFor(m => m.CustomerName)
+            @Html.ValidationMessageFor(m=>m.CustomerName)
+        </div>
+        <div>
+            @Html.LabelFor(m => m.EmailID)
+            @Html.TextBoxFor(m => m.EmailID)
+            @Html.ValidationMessageFor(m=>m.EmailID)
+        </div>
+        <div>
+            @Html.LabelFor(m => m.MobileNo)
+            @Html.TextBoxFor(m => m.MobileNo)
+            @Html.ValidationMessageFor(m=>m.MobileNo)
+        </div>
+        <input type="submit" value="Register" />*@
+}

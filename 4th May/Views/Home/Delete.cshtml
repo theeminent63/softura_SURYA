@@ -1,0 +1,27 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model AdoMVC.Models.Customer;
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Delete";
+}
+@using (var form = Html.BeginForm("Del", "Home", FormMethod.Post))
+{
+    <table>
+        <tr><th>Delete Customer</th></tr>
+        <tr>
+            <td>CustomerID</td>
+            <td>@Html.TextBoxFor(m => m.CustomerID)</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" name="Delete" />
+            </td>
+        </tr>
+    </table>
+}

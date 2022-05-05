@@ -1,0 +1,72 @@
+﻿@model IEnumerable<AdoMVC.Models.Customer>
+@{
+    ViewData["Title"] = "Customers";
+}
+
+@*<div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    </div>*@
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @using (Html.BeginForm("Create", "Home", FormMethod.Get))
+                    {
+                        <input type="submit" value="Create" />
+                    }
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    @using (Html.BeginForm("Delete", "Home", FormMethod.Get))
+                    {
+                        <input type="submit" value="Delete" />
+                    }
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    @using (Html.BeginForm("Update", "Home", FormMethod.Get))
+                    {
+                        <input type="submit" value="Edit" />
+                    }
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayName("ID")
+                </th>
+                <th>
+                    @Html.DisplayName("Customer Name")
+                </th>
+                <th>
+                    @Html.DisplayName("Email ID")
+                </th>
+                <th>
+                    @Html.DisplayName("Mobile No")
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CustomerID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CustomerName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EmailID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MobileNo)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
