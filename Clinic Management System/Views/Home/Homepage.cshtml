@@ -1,0 +1,44 @@
+﻿@model CMSProj.Models.login
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = null;
+}
+
+@*<div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    </div>*@
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<center>
+    <img src="~/Images/WhatsApp Image 2022-05-13 at 7.52.02 AM.jpeg" height="50" width="50" /><h1>Stone Clinic</h1>
+</center>
+
+
+<center>
+    <table cellspacing="10" cellpadding="5">
+        <tbody>
+
+            <tr>
+                <th>
+                    @using (Html.BeginForm("Validate", "Home", FormMethod.Post))
+                    {
+                        <p>
+
+                            UserName: <input type="Text" name="UserName" required/><br /><br />
+                            Password:&nbsp;&nbsp; <input type="password" name="Password" required/><br /><br />
+                            <input type="submit" value="Login" required/>
+
+                        </p>
+                    }
+                </th>
+            </tr>
+        </tbody>
+    </table>
+</center>
+
